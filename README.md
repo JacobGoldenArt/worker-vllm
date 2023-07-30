@@ -31,7 +31,3 @@ System dempendency installation, model caching, and other shell tasks should be 
 Models should be part of your docker image, this can be accomplished by either copying them into the image or downloading them during the build process.
 
 If using the input validation utility from the runpod python package, create a `schemas` python file where you can define the schemas, then import that file into your `handler.py` file.
-
-## 🔗 | Links
-
-🐳 [Docker Container](https://hub.docker.com/r/runpod/serverless-hello-world)
