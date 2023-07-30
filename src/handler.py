@@ -7,8 +7,8 @@ from vllm.utils import random_uuid
 import runpod
 
 # Prepare the model and tokenizer
-MODEL = '/model/Llama-2-7b-chat-hf'
-TOKENIZER = 'hf-internal-testing/llama-tokenizer'
+MODEL = '/model/ehartford/based-13b'
+TOKENIZER = 'ehartford/based-13b'
 
 # Prepare the engine's arguments
 engine_args = AsyncEngineArgs(
