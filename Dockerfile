@@ -33,7 +33,7 @@ ADD src .
 # Quick temporary updates
 RUN pip install git+https://github.com/runpod/runpod-python@main#egg=runpod --compile
 
-# Prepare the models inside the docker image
+# Prepare the model inside the docker image
 ARG HUGGING_FACE_HUB_TOKEN=NONE
 ENV HUGGING_FACE_HUB_TOKEN=$HUGGING_FACE_HUB_TOKEN
 
@@ -42,7 +42,7 @@ ENV DOWNLOAD_HF_MODEL=$HF_MODEL
 
 # Download the model
 RUN mkdir -p /model
-RUN DOWNLOAD_7B_MODEL=$DOWNLOAD_HF_MODEL HUGGING_FACE_HUB_TOKEN=$HUGGING_FACE_HUB_TOKEN python -u /download_model.py
+RUN DOWNLOAD_MODEL=$DOWNLOAD_HF_MODEL HUGGING_FACE_HUB_TOKEN=$HUGGING_FACE_HUB_TOKEN python -u /download_model.py
 
 # Start the handler
 CMD python -u /handler.py
