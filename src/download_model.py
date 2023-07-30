@@ -10,6 +10,6 @@ HF_MODEL = "ehartford/based-13b"
 if HUGGING_FACE_HUB_TOKEN:
     snapshot_download(
             HF_MODEL,
-            local_dir=f"/model/ehartford/based-13b",
+            local_dir="/model/ehartford/based-13b",
             token=HUGGING_FACE_HUB_TOKEN
     )
