@@ -29,5 +29,3 @@ I auto build a docker image via dockerhub pro every commit.
 System dempendency installation, model caching, and other shell tasks should be added to the `builder/setup.sh` this will allow you to easily setup your Dockerfile as well as run CI/CD tasks.
 
 Models should be part of your docker image, this can be accomplished by either copying them into the image or downloading them during the build process.
-
-If using the input validation utility from the runpod python package, create a `schemas` python file where you can define the schemas, then import that file into your `handler.py` file.
