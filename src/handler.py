@@ -7,8 +7,8 @@ from vllm.utils import random_uuid
 import runpod
 
 # Prepare the model and tokenizer
-MODEL = '/model/ehartford/based-13b'
-TOKENIZER = 'ehartford/based-13b'
+MODEL = '/model/ehartford/based-7b'
+TOKENIZER = 'ehartford/based-7b'
 
 # Prepare the engine's arguments
 engine_args = AsyncEngineArgs(
